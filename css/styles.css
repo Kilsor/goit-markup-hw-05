@@ -173,8 +173,7 @@ img {
   color: var(--accent-color);
 }
 
-.header-menu-link:hover:after,
-.header-menu-link:focus:after {
+.header-menu-link:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -183,6 +182,13 @@ img {
   top: 43px;
   background: var(--accent-color);
   border-radius: 2px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+
+.header-menu-link:hover:after,
+.header-menu-link:focus:after {
+  opacity: 1;
 }
 
 /* Контактна інформація */
@@ -210,6 +216,7 @@ img {
   top: 43px;
   background: var(--accent-color);
   border-radius: 2px;
+  opacity: 1;
 }
 
 /* ================================== /HEADER ================================== */
