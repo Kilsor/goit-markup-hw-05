@@ -173,6 +173,18 @@ img {
   color: var(--accent-color);
 }
 
+.header-menu-link:hover:after,
+.header-menu-link:focus:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  top: 43px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Контактна інформація */
 
 .header-contacts-link {
